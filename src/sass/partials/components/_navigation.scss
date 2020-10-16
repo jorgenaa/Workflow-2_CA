@@ -1,0 +1,86 @@
+.nav {
+	width: 100%;
+	
+	&__hamburger {
+		z-index: 10;
+	}
+	&__checkbox {
+		display: none;
+	}
+	&__btn {
+		display: none;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+		@include media-max-768px {
+			display: block;
+		}
+	}
+	&__navbar-nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		background-color: $darkGrey;
+		@include media-max-768px {
+			display: none;
+		}
+	}
+	&__link {
+		color: $white;
+		text-decoration: none;
+		padding: 12px 16px;
+		&--hover {
+			&:hover {
+				color: $yellow;	
+			}
+		}
+		&--active {
+			color: $yellow;
+		}
+	}
+	&__side-nav {
+		display: block;
+		height: 100vh;
+		width: 100%;
+		position: fixed;
+		z-index: 15;
+		top: 97px;
+		left: -100%;
+		background-color: $darkGrey;
+		opacity: 0.9;
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: all 0.3s ease;
+		text-align: center;
+	}
+	&__side-nav-link {
+		width: 100%;
+		//margin-left: -100%;
+		padding: 10px 10px 10px 30px;
+		text-decoration: none;
+		font-size: 20px;
+		color: $white;
+		display: block;
+		transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		&--hover {
+			&:hover {
+				color: $yellow;
+			}
+		}
+		&--active {
+			color: $yellow;
+		}
+	}
+}
+
+#click:checked ~ .nav__btn .nav__hamburger:before {
+	content: '\f00d';
+}
+
+#click:checked ~ #side-menu {
+	left: 0;
+}
+
+#click:checked ~ .nav__side-nav-link {
+	margin-left: 0px;
+}

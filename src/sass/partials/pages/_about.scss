@@ -1,0 +1,31 @@
+.about {
+  
+    &__article {
+        display: flex;
+        justify-content: center;
+        &--lightBlue {
+            background-color: $lightBlue;
+        }
+        &--darkBlue {
+            background-color: $darkBlue;
+        }
+        &--lightYellow {
+            background-color: $lightYellow;
+        }
+    }   
+  
+    &__item{
+        background-color: $white;
+        padding: 16px;
+        border: 2px solid $lightGrey;
+        &--white-border {
+            border-color: $white;
+        }
+        &--darkBlue-border {
+            border-color: $darkBlue;
+        }
+    }
+    &__img {
+       
+    }
+}

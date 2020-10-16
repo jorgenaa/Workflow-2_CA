@@ -1,0 +1,54 @@
+.header{
+    width:100%;
+    height: 100px;
+    background-color:$lightGrey;
+    display:flex;
+    align-items: center;
+    @include media-max-565px {
+      min-height: 150px;
+      display: block;
+    }
+    &__logo{
+        flex-basis:50%;
+        margin-left: 16px;
+    }
+    &__logo-item {
+        width: 250px;
+    }
+
+&__sign-in{
+    flex-basis:25%;
+    @include media-max-565px {
+      float: left;
+    }
+}
+&__sign-in-ancor {
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 14px 16px;
+    color: $darkGrey;
+    text-decoration: none;
+}
+&__basket {
+    flex-basis:25%;
+    margin-right: 16px;
+}
+&__shopping-basket {
+    color: $green;
+    font-size: 36px;
+    padding: 8px;
+    margin-right: 50px;
+    float: right;
+    cursor: pointer;
+    @include media-max-565px {
+        margin-right: 0px;
+        font-size: 26px;
+       
+    }
+}
+
+  }
+  
+  
+  

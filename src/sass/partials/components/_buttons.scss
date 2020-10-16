@@ -1,0 +1,49 @@
+.cta-btn {
+    color: #fff;
+    background-color: $lightGrey;
+    box-shadow: 1px 2px 5px $lightGrey;
+    text-decoration: none;
+    margin: 1em auto;
+    padding: 12px 16px;
+    border-radius: 5px;
+    
+    &--green {
+        background-color: #00782E;
+    }
+    
+    &--hover{
+        &:hover{
+            background-color: rgba(0,174,74,0.7);
+            color: #292019;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+            cursor:pointer;
+        }
+    }
+}
+
+.btn {
+    color: #000000;
+    background-color: $lightGrey;
+    box-shadow: 1px 2px 5px $lightGrey;
+    text-decoration: none;
+    margin: 1em auto;
+    padding: 12px 16px;
+    border-radius: 5px;
+    &--blue {
+        background-color: $darkBlue;
+        color: $white;
+    }
+    &--hover {
+        &:hover {
+            background-color: rgba(52,73,95,0.7);
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+            cursor:pointer;
+        }
+    }
+}

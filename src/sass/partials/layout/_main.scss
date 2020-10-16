@@ -1,0 +1,36 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    &__row {
+        display: flex;
+        flex-flow: wrap;
+    }
+    &__column-350px{
+        flex-basis: 350px;
+        	@include media-max-1113px {
+			flex-basis: 400px;
+		}
+        @include media-max-864px {
+            flex-basis: 250px;
+        }
+          @include media-max-565px {
+            flex-basis: 350px;
+        }
+    }
+    &__column-20 {
+        flex-basis: 20%;
+    }
+    &__column-400px {
+        flex-basis: 400px;
+    }
+    &__column-70 {
+        flex-basis: 70%;
+    }
+}
+
+.separator {
+    background-color: $white;
+    height: 32px;
+}
+

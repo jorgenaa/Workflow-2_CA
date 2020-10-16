@@ -1,0 +1,175 @@
+.banner {
+	width: 100%;
+	height: 50vh;
+	background-image: url('../img/coffee_cake.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		
+		@include media-max-768px {
+			flex-direction: column;
+		}
+	}
+	&__title {
+		text-align: center;
+		@include media-max-768px {
+			font-size: 36px;
+		}
+	}
+}
+
+.campaign {
+	background-color: $lightBlue;
+		@include media-max-565px {
+		padding: 16px 0 0;
+		}
+	&__wrapper {
+		justify-content: center;
+	@include media-max-565px {
+		padding: 0px;
+		}
+		
+	}
+	&__link {
+		padding: 16px;
+		cursor: pointer;
+		-webkit-transition: opacity 0.5s ease-in-out;
+		-moz-transition: opacity 0.5s ease-in-out;
+		-o-transition: opacity 0.5s ease-in-out;
+		transition: opacity 0.5s ease-in-out;
+			@include media-max-565px {
+		padding: 0 16px 16px;
+		}
+		&--hover {
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+	&__img-wrapper {
+		position: relative;
+	}
+	&__img {
+		z-index: 2;
+	}
+	&__title {
+		position: absolute;
+		top: 40%;
+		left: 0%;
+		height: 30%;
+		margin: 0;
+		padding: 16px;
+		z-index: 10;
+		text-decoration: none;
+		font-weight: bold;
+		color: $white;
+		text-shadow: 2px 2px $darkGrey;
+		background-color: rgba(0, 0, 0, 0.5);
+		text-align: center;
+		font-size: 36px;
+		width: 100%;
+		@include media-max-1385px {
+			font-size: 26px;	
+		}
+		
+		@include media-max-939px {
+			font-size: 22px;
+			height: 40%;
+		}
+		@include media-max-565px {
+			font-size: 26px;
+			height: 30%;
+			
+		}
+	}
+}
+
+.offer {
+	width: 100%;
+	background-color: $darkBlue;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	&__wrapper {
+		justify-content: center;
+				@include media-max-565px {
+			padding:0;
+		}
+	}
+	&__item {
+		padding: 16px;
+		margin: 16px;
+		height: 100%;
+		background-color: $white;
+		@include media-max-565px {
+			margin:0 0 16px;	
+		}
+	}
+	
+	&__content {
+		width: 100%;
+		display: block;
+		
+	}
+	&__icon {
+		&:before {
+			padding: 10px;
+		}
+	}
+}
+
+.barista {
+	width: 100%;
+	height: 60vh;
+	background-image: url('../img/store.jpg');
+	background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+	 @include media-max-939px {
+			 justify-content: center;
+		}
+	&__wrapper {
+        flex-basis: 350px;
+       
+	}
+	&__item {
+		background-color: rgba(255, 255, 255, 0.8);
+        padding: 16px;
+     
+    }
+    &__text {
+        font-size: 26px;
+		 @include media-max-565px {
+			 font-size: 16px;
+		}
+    }
+}
+
+.favorites {
+	background-color: $lightYellow;
+	&__wrapper {
+		margin: 16px auto;
+		justify-content: center;
+		  @include media-max-565px {
+			margin: 0;	
+		}
+	}
+	&__item {
+		padding: 16px;
+		  @include media-max-565px {
+			padding: 0 0 16px;	
+		}
+	}
+}
